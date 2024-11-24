@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford Sells</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Oxford Sells</h1>
+        <p><strong>Step into Style & Sustainability</strong></p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="materialize.html">Materialize Features</a></li> 
+            <li><a href="jquery.html">jquery</a></li>
+            <li><a href="bootstrap.html">bootstrap</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <h2>Our Featured Products</h2>
+        <p>At <em>Oxford Sells</em>, we offer a wide variety of high-quality shoes and clothes. Whether you're looking for rare sneakers or timeless vintage clothing, we have something for everyone.</p>
+        <p><u>Explore our curated collections:</u></p>
+        <ul>
+            <li><strong>Sneakers:</strong> Discover limited-edition sneakers from top brands like Nike, Adidas, and more.</li>
+            <li><strong>Vintage Clothing:</strong> From retro Levi's denim jackets to iconic 90's streetwear, find the perfect piece for your wardrobe.</li>
+            <li><strong>Designer Items:</strong> Shop our collection of gently used luxury items at unbeatable prices.</li>
+        </ul>
+        
+        <!-- Add images here -->
+        <img id="featuredImage" src="images/Shoe1.jpg" alt="White Sneakers" style="width:400px;">
+        <p><button onclick="changeImage()">See Another Featured Product</button></p>
+    </section>
+
+   
+    <script>
+        let currentImageIndex = 0;
+        const images = [
+            { src: "images/Shoe1.jpg", alt: "White Sneakers" },
+            { src: "images/Shoe2.jpg", alt: "Brown Vans Shoes" },
+            { src: "images/Jacket.jpg", alt: "Red Jacket" }
+        ];
+
+        function changeImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById("featuredImage").src = images[currentImageIndex].src;
+            document.getElementById("featuredImage").alt = images[currentImageIndex].alt;
+        }
+    </script>
+
+    <!-- Why Shop with Us Section -->
+    <aside id="whySection">
+        <h2>Why Shop with Us?</h2>
+        <ul>
+            <li><strong>Sustainable Fashion:</strong> Every item you buy supports a circular fashion model, reducing waste and keeping you in style.</li>
+            <li><strong>Quality Guaranteed:</strong> All items are inspected and verified before listing to ensure top-notch quality.</li>
+        </ul>
+    </aside>
+
+    <!-- Button to Toggle "Why Shop with Us" Section -->
+    <p><button onclick="toggleWhySection()">Show/Hide Why Shop with Us</button></p>
+
+    <!-- JavaScript for toggling visibility of "Why Shop with Us" section -->
+    <script>
+        function toggleWhySection() {
+            const section = document.getElementById("whySection");
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Popular Sizes and Prices -->
+    <section>
+        <h2>Popular Sizes and Prices</h2>
+        <table>
+            <tr>
+                <th>Size</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Nike Air Max 97</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>XL</td>
+                <td>Vintage Levi's Jacket</td>
+                <td>$80</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer with contact information -->
+    <footer>
+        <p>&copy; 2024 Oxford Sells. All rights reserved.</p>
+        <p>Located in Oxford, Ohio | Phone: (555) 555-5555 | Email: <a href="mailto:contact@oxfordsells.com">contact@oxfordsells.com</a></p>
+    </footer>
+</body>
+</html>

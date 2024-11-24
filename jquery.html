@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Oxford Sells - Trendy Resale</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <style>
+       .header-bg {
+           background-color: #26a69a; /* Teal background */
+       }
+       .section-bg {
+           background-color: #e0f2f1; /* Light teal background */
+       }
+       .shadow {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .table-header {
+           background-color: #009688; /* Darker teal background */
+           color: white;
+       }
+       .circle {
+           border-radius: 50%;
+           height: 250px;
+           width: 250px;
+           object-fit: cover;
+       }
+   </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="header-bg">
+       <div class="nav-wrapper">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="products.html">Our Products</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="materialize.html">Materialize</a></li>  
+               <li><a href="jquery.html">jQuery</a></li> 
+               <li><a href="bootstrap.html">bootstrap</a></li>        
+           </ul>
+       </div>
+   </nav>
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Welcome to Oxford Sells</h1>
+       <p class="white-text">Exclusive Secondhand Fashion</p>
+   </div>
+
+   <div class="container">
+       <h1>jQuery Effects</h1>
+       <button id="hide">Hide Text</button>
+       <button id="show">Show Text</button>
+       <button id="fadeToggle">Toggle Fade</button>
+       <button id="slideToggle">Toggle Slide</button>
+       <button id="slideDown">Slide Down</button>
+       <button id="slideUp">Slide Up</button>
+       <p id="text" style="display:none;">This text will be shown, hidden, and animated with different effects. Click the buttons to see each effect!</p>
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script>
+       $(document).ready(function() {
+           // Hide and Show functionality
+           $("#hide").click(function() {
+               $("#text").hide();
+           });
+
+           $("#show").click(function() {
+               $("#text").show();
+           });
+
+           // Fade Toggle functionality
+           $("#fadeToggle").click(function() {
+               $("#text").fadeToggle("slow");
+           });
+
+           // Slide Toggle functionality
+           $("#slideToggle").click(function() {
+               $("#text").slideToggle("slow");
+           });
+
+           // Slide Down functionality
+           $("#slideDown").click(function() {
+               $("#text").slideDown("slow");
+           });
+
+           // Slide Up functionality
+           $("#slideUp").click(function() {
+               $("#text").slideUp("slow");
+           });
+       });
+   </script>
+</body>
+</html>

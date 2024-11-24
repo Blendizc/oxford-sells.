@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Materialize uses Roboto by default */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #444;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #333; /* Consider using Materialize classes for hover effects */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Content and layout styling */
+section, aside {
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    /* Using Materialize classes for tables is recommended */
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Image styling */
+img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    width: 400px; /* Adjust this size based on preference */
+}
+
+.circle-container {
+    background-color: #f8f8f8; /* Try changing to a bright color to test visibility */
+    border-radius: 50%;
+    width: 260px; 
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Increase if background is not visible */
+}
+
+header img.logo {
+        max-height: 60px; /* Adjust this value based on your preference */
+        width: auto; /* Ensures the width adjusts to maintain the aspect ratio */
+       vertical-align: middle; /* Aligns the logo vertically with the text */
+        background-color: transparent; 
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 0; /* Removes default margin for closer alignment */
+        display: inline-block; /* Aligns text with the image horizontally */
+    }
+    
